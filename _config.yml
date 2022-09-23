@@ -1,29 +1,32 @@
 # main text of home
-title: John Doe
-bio: A Person who travels the world eating noodles
+title: Georgios Tsolakis
+bio: Postdoctoral Researcher and Instructor in the Department of Classics
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: Academic Portfolio
 
 # if it's an external image, update below for true
 # better with square images
-external-image: false
+external-image: auto
 picture: assets/images/profile.jpg
 
 # your site color theme, true for dark theme, 
 # false to light theme, auto to switch with system.
-dark-theme: auto
+dark-theme: false
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: true
 resume-external: true
-resume-url: https://google.com/?q=my+resume
+resume-url: https://classics.uchicago.edu/people/georgios-tsolakis
 
-url: https://sergiokopplin.github.io/indigo
+url: https://tsolakisgeo.github.io/tsolakisgeo
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
+
+markdown: kramdown
+highlighter: rouge
 
 # To enable google analytics, supply your token below
 # analytics-google: 'UA-MYANALYTICS'
@@ -34,26 +37,21 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
-instagram: myinstagram
-linkedin: mylinkedin
-github: mygithub
-email: myemail@gmail.com
+# facebook: myfacebook
+twitter: tsolakisgeo
+# instagram: myinstagram
+linkedin: georgios-tsolakis-15b60b80
+github: tsolakisgeo
+email: tsolakisgeo@uchicago.edu
+academia: GeorgiosTsolakis
 
 authors:
-  johndoe:
-    name: John Doe
-    bio: A Man who travels the world eating noodles
+  tsolakisgeo:
+    name: Georgios Tsolakis
+    bio: Postdoctoral Researcher and Instructor in the Department of Classics
     external-image: false
     picture: assets/images/profile.jpg
-    twitter: johndoe
-  jamesfoster:
-    name: James Foster
-    bio: A Man who develops software with coffee
-    external-image: false
-    picture: assets/images/james.jpg
-    twitter: jamesfoster
+    twitter: tsolakisgeo
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -69,14 +67,15 @@ pagination:
   permalink: "/:num/" # pagination link that will be appended
 
 # if you don't need projects, comment the *projects* configs below
-projects: true
+# projects: true
+syllabuses: true
 
 # if you don't need "about" or "blog", comment them out below
-about: true
-blog: true
+# about: true
+# blog: true
 
 # do you want to show the "read time" of the posts?
-read-time: true
+read-time: false
 
 # do you want to show the "tags" inside the posts?
 show-tags: true
@@ -109,6 +108,13 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-paginate-v2
+  - jemoji
+  - jekyll-mentions
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate
 
 compress_html:
   ignore:
